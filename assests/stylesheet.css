@@ -17,17 +17,26 @@ h1, h3 {
 }
 /* fixed header width (make sure auto save is on) */
 header{
-    position: fixed;
+    position: top;
     width: 1190px;
     border: 10px solid green;  
     background-color: lightblue;
     font-weight: bolder;
     font-size: larger;
 }
+.hero{
+    margin: 0px;
+    padding-left: 350px;
+}
+img{
+    margin-top: 30px;}
+
+.panel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
 
 footer {position: relative
     height 100px;
 width: 300px;
 background-color: rgb(49, 146, 146);}
-img{
-    margin-top: 300px;}
