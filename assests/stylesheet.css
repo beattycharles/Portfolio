@@ -46,7 +46,29 @@ color: chartreuse;
 ul {
     list-style-type: none;
 }
+html, css, JavaScript {font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:x-large;
+}
 
+.tooltip, .html{
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext, .html .htmllink{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext, .html:hover .htmlink {
+    visibility: visible;
+}
 .panel{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -54,7 +76,7 @@ ul {
 
 #Contact{clear: both;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: x-large;
+font-size: xlarge;
 color: yellow;
 background-color:blue;
 width: 500px;
