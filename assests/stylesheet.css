@@ -1,10 +1,58 @@
-.about-me{
+h1 { 
+    text-align: center;
+}
+/* fixed header width (responive design needed) */
+header{
+    position: relative;
+    height: 200px;
+    width: 1870px;
+    border: 10px solid green;  
+    background-color: lightblue;
+    font-weight: bolder;
+    font-size: larger;
+}
+@media screen and (max-width: 992px) {
+    header {
+        background-color: lightcoral;
+        width: 930px;
+    }
+}
+
+img{margin-left: 700px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    img {
+        margin-left: 300px
+    }
+}
+.about-me{ float: right;
     font-family: 'Times New Roman', Times, serif;
     font-size: xxx-large;
     background-color: darkgreen;
-    width: 1100px;
+    width: auto;
 }
-#Contact{
+aside { float: left;
+    display: block;   
+    height: 150px; 
+font-size: xxx-large;
+background-color: darkblue;
+color: chartreuse;
+}
+.vl {  border-right: 5px solid #000;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.panel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#Contact{clear: both;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: x-large;
 color: yellow;
@@ -12,31 +60,8 @@ background-color:blue;
 width: 500px;
 }
 
-h1, h3 { 
-    text-align: center;
-}
-/* fixed header width (make sure auto save is on) */
-header{
-    position: top;
-    width: 1190px;
-    border: 10px solid green;  
-    background-color: lightblue;
-    font-weight: bolder;
-    font-size: larger;
-}
-.hero{
-    margin: 0px;
-    padding-left: 350px;
-}
-img{
-    margin-top: 30px;}
-
-.panel{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-footer {position: relative
+footer {clear: both;
+    position: relative
     height 100px;
 width: 300px;
 background-color: rgb(49, 146, 146);}
