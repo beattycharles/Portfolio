@@ -1,7 +1,7 @@
 h1 { 
     text-align: center;
 }
-/* fixed header width (responive design needed) */
+
 header{
     position: relative;
     height: 200px;
@@ -23,9 +23,13 @@ img{margin-left: 700px;
 }
 
 @media screen and (max-width: 992px) {
-    img {
+    .me {
         margin-left: 300px
     }
+}
+@media screen and (min-width: 414px) {
+    .me {margin-left:150px}
+    .card {}
 }
 .about-me{ float: right;
     font-family: 'Times New Roman', Times, serif;
@@ -51,11 +55,11 @@ html, css, JavaScript {font-style: italic;
     font-size:x-large;
 }
 
-.tooltip, .html{
+.tooltip {
     position: relative;
     display: inline-block;
 }
-.tooltip .tooltiptext, .html .htmllink{
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -66,12 +70,22 @@ html, css, JavaScript {font-style: italic;
     position: absolute;
     z-index: 1;
 }
-.tooltip:hover .tooltiptext, .html:hover .htmlink {
+.tooltip:hover .tooltiptext {
     visibility: visible;
 }
-.panel{
+.panel {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+}
+.card{
+    display: flex;
+    outline-style: solid;
+    border: 2px black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+       rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 #Contact{clear: both;
