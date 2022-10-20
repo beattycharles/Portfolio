@@ -1,6 +1,13 @@
 h1 { 
     text-align: center;
 }
+html {
+    background: url(https:images.unsplash.com/photo-1556828139-f201a948e668?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 header{
     position: relative;
@@ -11,39 +18,42 @@ header{
     font-weight: bolder;
     font-size: larger;
 }
-@media screen and (max-width: 992px) {
+.me {
+    margin-left: 700px;
+    margin-top: 30px;
+
+}
+@media screen and (max-width: 375px) {
+    .me {margin-left: 1px;
+        width: 320px;
+        height: 320px;
+    }
     header {
         background-color: lightcoral;
-        width: 930px;
+        width: 300px;
+        height: auto;
+    }
+    ul {padding: 0px;
     }
 }
 
-img{margin-left: 700px;
-    margin-top: 30px;
-}
-
-@media screen and (max-width: 992px) {
-    .me {
-        margin-left: 300px
-    }
-}
-@media screen and (min-width: 414px) {
-    .me {margin-left:150px}
-    .card {}
-}
-.about-me{ float: right;
+.about-me{display: flex;
+    flex-wrap: wrap;
     font-family: 'Times New Roman', Times, serif;
-    font-size: xxx-large;
+    font-size: xx-large;
     background-color: darkgreen;
-    width: auto;
+    margin-bottom: 30px;
+    
+
 }
-aside { float: left;
-    display: block;   
-    height: 150px; 
+aside {display: flex;
+    float: left;   
+    height: 50px; 
 font-size: xxx-large;
 background-color: darkblue;
 color: chartreuse;
 }
+
 .vl {  border-right: 5px solid #000;
 }
 
@@ -58,6 +68,10 @@ html, css, JavaScript {font-style: italic;
 .tooltip {
     position: relative;
     display: inline-block;
+    color:coral ;
+    background-color: rgba(0, 0, 0, 60%);
+    font-size: x-large;
+
 }
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -78,14 +92,16 @@ html, css, JavaScript {font-style: italic;
     text-align: center;
 }
 .card{
-    display: flex;
+    display: inline-flex;
+    background-color: rgba(0, 0, 0, 60%);
+    color: coral;
     outline-style: solid;
-    border: 2px black;
+    border: 3px black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
      rgba(0, 0, 0, 0.12) 0px -12px 30px,
       rgba(0, 0, 0, 0.12) 0px 4px 6px,
        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
 
 #Contact{clear: both;
