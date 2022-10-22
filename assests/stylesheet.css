@@ -1,137 +1,152 @@
-h1 { 
-    text-align: center;
+h1 {
+  text-align: center;
 }
 
 html {
-    display: flex;
-    flex: 1 1 1;
-    background-image: url("../images/river.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  display: flex;
+  flex: 1 1 1;
+  background-image: url("../images/river.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-header{
-    position: relative;
-    height: 200px;
-    width: 1870px;
-    border: 10px solid green;  
-    background-color: lightblue;
-    font-weight: bolder;
-    font-size: larger;
+header {
+  position: relative;
+  height: 200px;
+  width: 1870px;
+  border: 10px solid green;
+  background-color: lightblue;
+  font-weight: bolder;
+  font-size: larger;
 }
 .me {
-    margin-left: 700px;
-    margin-top: 30px;
-
-}
-@media screen and (max-width: 375px) {
-    .me {margin-left: 1px;
-        width: 320px;
-        height: 320px;
-    }
-    header {
-        background-color: lightcoral;
-        width: 300px;
-        height: auto;
-    }
-    .about-me {
-        width:480px;
-    }
-    ul, .vl .work, .card1, .card2, .about-me {display: flex;
-        flex-shrink: 1;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0px;
-    }
+  margin-left: 700px;
+  margin-top: 30px;
 }
 
-.about-me, .work {display: flex;
-    flex-wrap: wrap;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    background-color: darkgreen;
-    margin-bottom: 30px;
-    
+.about-me,
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large;
+  background-color: darkgreen;
+  margin-bottom: 30px;
 }
 
-aside {display: flex;
-    float: left;   
-    height: 50px; 
-font-size: xxx-large;
-background-color: darkblue;
-color: chartreuse;
+aside {
+  display: flex;
+  float: left;
+  height: 50px;
+  font-size: xxx-large;
+  background-color: darkblue;
+  color: chartreuse;
 }
 
-ul {display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    list-style-type: none;
+ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
-html, css, JavaScript {font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size:x-large;
+html,
+css,
+JavaScript {
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
 }
 
 .tooltip {
-    position: relative;
-    display: inline-block;
-    color:coral ;
-    background-color: rgba(0, 0, 0, 60%);
-    font-size: x-large;
-
+  position: relative;
+  display: inline-block;
+  color: coral;
+  background-color: rgba(0, 0, 0, 60%);
+  font-size: x-large;
 }
 .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
-    position: absolute;
-    z-index: 1;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
 }
 .tooltip:hover .tooltiptext {
-    visibility: visible;
+  visibility: visible;
 }
 .panel {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 .work {
+  display: flex;
+  flex-shrink: 1;
+  justify-content: space-around;
+}
+.card1,
+.card2 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 0px;
+  background-color: rgba(0, 0, 0, 60%);
+  color: coral;
+  outline-style: solid;
+  border: 3px black;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#Contact {
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: xlarge;
+  color: yellow;
+  background-color: blue;
+  width: 400px;
+}
+
+footer {
+  clear: both;
+  position: relative height 100px;
+  width: 300px;
+  background-color: rgb(49, 146, 146);
+}
+
+@media screen and (max-width: 375px) {
+  .me {
+    margin-left: 1px;
+    width: 320px;
+    height: 320px;
+  }
+  header {
+    background-color: lightcoral;
+    width: 300px;
+    height: auto;
+  }
+  .about-me {
+    width: 95vw;
+  }
+  ul,
+  .vl .work,
+  .card1,
+  .card2,
+  .about-me {
     display: flex;
     flex-shrink: 1;
-    justify-content: space-around;
-}
-.card1, .card2 {display: flex;
-    justify-content: space-around;
-    margin-left: 0px;
-    background-color: rgba(0, 0, 0, 60%);
-    color: coral;
-    outline-style: solid;
-    border: 3px black;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-     rgba(0, 0, 0, 0.12) 0px -12px 30px,
-      rgba(0, 0, 0, 0.12) 0px 4px 6px,
-       rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;    
-}
-
-#Contact{display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    clear: both;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-font-size: xlarge;
-color: yellow;
-background-color:blue;
-width: 400px;
+    padding: 0px;
+  }
 }
-
-footer {clear: both;
-    position: relative
-    height 100px;
-width: 300px;
-background-color: rgb(49, 146, 146);}
