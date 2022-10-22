@@ -1,7 +1,10 @@
 h1 { 
     text-align: center;
 }
+
 html {
+    display: flex;
+    flex: 1 1 1;
     background-image: url("../images/river.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -33,19 +36,26 @@ header{
         width: 300px;
         height: auto;
     }
-    ul {padding: 0px;
+    .about-me {
+        width:480px;
+    }
+    ul, .vl .work, .card1, .card2, .about-me {display: flex;
+        flex-shrink: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
     }
 }
 
-.about-me{display: flex;
+.about-me, .work {display: flex;
     flex-wrap: wrap;
     font-family: 'Times New Roman', Times, serif;
     font-size: xx-large;
     background-color: darkgreen;
     margin-bottom: 30px;
     
-
 }
+
 aside {display: flex;
     float: left;   
     height: 50px; 
@@ -54,12 +64,12 @@ background-color: darkblue;
 color: chartreuse;
 }
 
-.vl {  border-right: 5px solid #000;
-}
-
-ul {
+ul {display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     list-style-type: none;
 }
+
 html, css, JavaScript {font-style: italic;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:x-large;
@@ -91,8 +101,14 @@ html, css, JavaScript {font-style: italic;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
 }
-.card{
-    display: inline-flex;
+.work {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: space-around;
+}
+.card1, .card2 {display: flex;
+    justify-content: space-around;
+    margin-left: 0px;
     background-color: rgba(0, 0, 0, 60%);
     color: coral;
     outline-style: solid;
@@ -104,12 +120,14 @@ html, css, JavaScript {font-style: italic;
         rgba(0, 0, 0, 0.09) 0px -3px 5px;    
 }
 
-#Contact{clear: both;
+#Contact{display: flex;
+    flex-wrap: wrap;
+    clear: both;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 font-size: xlarge;
 color: yellow;
 background-color:blue;
-width: 500px;
+width: 400px;
 }
 
 footer {clear: both;
