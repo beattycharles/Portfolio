@@ -1,6 +1,7 @@
 html {
   display: flex;
   background-image: url("../images/river.jpg");
+  alt: "Stream picture from dnr.maryland.gov";
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
