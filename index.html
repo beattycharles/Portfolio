@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" initial-scale=1.0/>
     <link rel="stylesheet" type="text/css" href="./assests/stylesheet.css" />
     <title>Portfolio of Charles Beatty</title>
   </head>
@@ -15,10 +15,17 @@
         <a href="#Contact">Contact Me:</a>
         <a href="https://linkedin.com/in/charles-beatty-4a86565a">Linkedin:</a>
         <a href="https://github.com/beattycharles">Github:</a>
-        <a href="#Work:">My Work:</a>
-        <a href="#About Me">About Me:</a>
+        <a href="#work">My Work:</a>
+        <a href="#about-me">About Me:</a>
       </section>
     </header>
+
+<section>
+    <div class="hero">
+    <img class="heropic" src="./images/binary.jpeg"
+    alt="binary tunnel">
+    </div>
+  </section>
 
     <section>
       <img
@@ -26,11 +33,10 @@
         src="./images/Me2.png"
         height="450px"
         width="450px"
-        alt="Picture of Charles"
-      />
+        alt="Picture of Charles">
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about-me">
       <aside class="vl">About Me:</aside>
       <p>
         I enjoy PC gaming and fishing. My background is in pc repair and
@@ -39,20 +45,21 @@
       </p>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
       <aside class="vl">Work:</aside>
 
-      <ul>
+      <ul class="cardsize">
         <li class="card1">
+          <a href="https://beattycharles.github.io/prework-study-guide/">
           HTML
-          <img src="./images/FirstPage.PNG" height="300px" width="600px" />
+          <img class="card1pic" src="./images/FirstPage.PNG" alt="Html project"/>
+          </a>
         </li>
-        <li class="card1">
-          HTML
-          <img src="./images/FirstPage.PNG" height="300px" width="600px" />
-        </li>
+        <br/>
         <li class="card2">
-          CSS <img src="./images/Refactor.PNG" height="400px" width="600px" />
+          <a href="https://beattycharles.github.io/AsscibiltyChallenge/">
+          CSS <img class="card2pic" src="./images/Refactor.PNG"/>
+          </a>
         </li>
         <br />
         <br />
@@ -68,13 +75,15 @@
     </section>
 
     <footer>
-      <form>
+      <form class="fillin">
         <label for="fname"><h4>First Name:</h4></label>
         <input type="text" id="fname" name="fname" />
         <label for="lname"><h4>Last Name:</h4></label>
         <input type="text" id="lname" name="lname" />
         <label for="Email"><h4>Email:</h4></label>
         <input type="text" id="email" name="Email" />
+        <label for="Comments"><h4>Comments:</h4></label>
+        <input type="text" id="Comments" name="Comments">
         <input type="Submit" value="Submit" />
       </form>
     </footer>
