@@ -15,6 +15,7 @@ so that they can assess whether I am  a good candidate for an open position. Thi
 
 ## Usage
 Give a presentation of myself for employers and clients.
+Tested for iphone SE, ipad air, pc desktop.
 
 ## Screeshot
 
