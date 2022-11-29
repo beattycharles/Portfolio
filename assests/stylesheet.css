@@ -69,7 +69,7 @@ JavaScript {
   font-size: x-large;
 }
 
-.tooltip {
+/* .tooltip {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -89,7 +89,7 @@ JavaScript {
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-}
+} */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -99,7 +99,8 @@ JavaScript {
 }
 
 .card1pic,
-.card2pic {
+.card2pic,
+.card3pic {
   display: flex;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 60%);
@@ -111,7 +112,8 @@ JavaScript {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .card1,
-.card2 {
+.card2,
+.card3 {
   padding-bottom: 10px;
   padding-right: 70px;
 }
@@ -126,6 +128,11 @@ JavaScript {
   flex: 1 0 200px;
   height: 300px;
   width: 400px;
+}
+.card3pic {
+  flex: 1 0 300px;
+  height: 300px;
+  width: 300px;
 }
 
 footer {
